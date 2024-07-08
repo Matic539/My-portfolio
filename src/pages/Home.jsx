@@ -8,12 +8,16 @@ const Home = () => {
             <h1>Matias López</h1>
             <h2>My Portfolio</h2>
             <div className="language-button">
-                <button>
-                    <Link to="/about"><b>English</b></Link>
-                </button>
-                <button>
-                    <Link to="/about"><b>Español</b></Link>
-                </button>
+                <Link to="/about">
+                    <button>
+                        <b>English</b>
+                    </button>
+                </Link>
+                <Link to="/about">
+                    <button>
+                        <b>Español</b>
+                    </button>
+                </Link>
             </div>
         </div>
     );
