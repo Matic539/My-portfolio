@@ -1,0 +1,35 @@
+.sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-color: #004c6d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar ul li a.active {
+    color: #ffa726;
+    /* Color de contraste para el enlace activo */
+}
+
+.sidebar ul li a:hover {
+    color: #66bb6a;
+    /* Otro color de contraste para el hover */
+}

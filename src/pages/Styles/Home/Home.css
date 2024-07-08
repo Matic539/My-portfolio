@@ -1,0 +1,45 @@
+.home-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0a2629;
+    color: #fff;
+}
+
+.home-section h1 {
+    font-size: 6em;
+    color: #d3f4f2;
+    padding-top: 40px;
+}
+
+.home-section h2 {
+    font-size: 3em;
+    margin: 10px;
+    color: #72d6d4;
+}
+
+.language-button {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.language-button b {
+    color: #0a2629;
+}
+
+.language-button button {
+    padding: 10px 50px;
+    font-size: 1.2em;
+    background-color: #f2fbfa;
+    border: 3px solid #d3f4f2;
+    border-radius: 10px;
+    transition: 0.6s ease;
+}
+
+.language-button button:hover {
+    background-color: #72d6d4;
+}
