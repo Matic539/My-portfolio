@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import FogBackground from '../components/Animated/FogBackground';
 import './Styles/Home/Home.css';
 
 const Home = () => {
     return (
         <div className='home-section'>
+            <FogBackground />
             <h1>Matias López</h1>
             <h2>My Portfolio</h2>
             <div className="language-button">
