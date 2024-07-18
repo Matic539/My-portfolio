@@ -1,0 +1,72 @@
+.skills {
+    height: 100vh;
+    padding: 20px;
+    background-color: #0a2629;
+    color: #fff;
+    margin-left: 225px; /* Añadido margen izquierdo */
+    border-left: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    overflow: hidden; /* Para evitar el desbordamiento */
+}
+
+.skills h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #d3f4f2;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    width: 100%;
+    max-width: 1200px; /* Limitar el ancho máximo del contenedor */
+    padding: 0 20px; /* Añadir padding para que no quede pegado a los bordes */
+}
+
+.skills-container .slick-slide {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px; /* Añadir padding alrededor de cada slide para separación */
+}
+
+.skill-card {
+    background-color: #202428;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    display: flex; /* Añadido para usar flexbox */
+    flex-direction: column; /* Añadido para la dirección de los elementos */
+    justify-content: space-between; /* Añadido para distribuir el espacio */
+    min-height: 300px; /* Añadido para asegurar una altura mínima */
+}
+
+.skill-image {
+    width: 100%;
+    height: 150px; /* Definir un tamaño fijo para las imágenes */
+    object-fit: contain; /* Asegurar que la imagen se ajuste al tamaño definido sin distorsionarse */
+    padding: 10px; /* Añadir un pequeño padding alrededor de las imágenes */
+}
+
+.skill-content {
+    padding: 15px;
+    flex: 1; /* Permite que el contenido tome el espacio disponible */
+    display: flex; /* Añadido para usar flexbox */
+    flex-direction: column; /* Añadido para la dirección de los elementos */
+    justify-content: space-between; /* Añadido para distribuir el espacio */
+}
+
+.skill-content h2 {
+    font-size: 1.5em;
+    color: #00ffee;
+    margin-bottom: 10px;
+}
+
+.skill-content p {
+    font-size: 1em;
+    color: #72d6d4;
+    margin-bottom: 10px;
+}
