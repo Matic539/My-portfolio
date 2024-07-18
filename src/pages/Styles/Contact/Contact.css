@@ -34,6 +34,14 @@
     color: #ffa726;
 }
 
+.contact .me-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 7px solid #00fffb;
+}
+
 @media (max-width: 768px) {
     .contact {
         margin-left: 0;

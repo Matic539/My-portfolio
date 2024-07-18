@@ -105,11 +105,16 @@
 /* Media Queries para responsividad */
 @media (max-width: 768px) {
     .projects {
+        padding-top: 100px;
         margin-left: 0; /* Eliminar margen izquierdo en pantallas más pequeñas */
     }
 
     .projects-container {
         max-height: none; /* Permitir que el contenedor crezca según el contenido */
+    }
+
+    .project-content h2 {
+        font-size: 1.3em;
     }
 
     .project-card {
