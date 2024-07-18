@@ -1,10 +1,8 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
+import React from 'react';
 import BancoCRUD from '../assets/img/Projects/banco-CRUD.webp';
 import ForoRed from '../assets/img/Projects/foro-redlife.webp';
 import Childev from '../assets/img/Projects/childev-website.webp';
 import './Styles/Projects/Projects.css';
-import 'aos/dist/aos.css';
 
 const projects = [
     {
@@ -25,22 +23,17 @@ const projects = [
         image: Childev,
         link: ''
     },
-
 ];
 
 const Projects = () => {
-    useEffect(() => {
-        AOS.init({ duration: 1000 });
-    }, []);
-
     return (
         <div className="projects">
             <h1>My Projects</h1>
             <div className="projects-container">
                 {projects.map((project, index) => (
                     <div className="project-card" key={index}>
-                        <img src={project.image} alt={project.title} className="project-image" data-aos="zoom-in" />
-                        <div className="project-content" data-aos="fade-down">
+                        <img src={project.image} alt={project.title} className="project-image" />
+                        <div className="project-content">
                             <h2>{project.title}</h2>
                             <p>{project.description}</p>
                             <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>

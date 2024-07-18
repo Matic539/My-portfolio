@@ -3,8 +3,11 @@
     padding: 20px;
     background-color: #0a2629;
     color: #fff;
-    margin-left: 225px; /* Margen izquierdo para compensar el menú lateral */
+    margin-left: 225px;
     border-left: 1px solid #fff;
+    overflow: hidden; /* Para evitar el desbordamiento */
+    display: flex;
+    flex-direction: column;
 }
 
 .projects h1 {
@@ -19,6 +22,12 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    max-height: 80vh; /* Ajustar la altura máxima del contenedor */
+    overflow-y: auto; /* Añadir scrollbar interno */
+    padding: 20px 20px;
+    background-color: #183b3d;
+    border-radius: 16px;
+    width: 100%;
 }
 
 .project-card {
@@ -29,6 +38,10 @@
     width: 300px;
     text-align: center;
     transition: transform 0.3s;
+    display: flex; /* Añadido para usar flexbox */
+    flex-direction: column; /* Añadido para la dirección de los elementos */
+    justify-content: space-between; /* Añadido para distribuir el espacio */
+    min-height: 400px; /* Añadido para asegurar una altura mínima */
 }
 
 .project-card:hover {
@@ -43,6 +56,11 @@
 
 .project-content {
     padding: 15px;
+    flex: 1; /* Permite que el contenido tome el espacio disponible */
+    overflow: auto; /* Permitir desplazamiento interno */
+    display: flex; /* Añadido para usar flexbox */
+    flex-direction: column; /* Añadido para la dirección de los elementos */
+    justify-content: space-between; /* Añadido para distribuir el espacio */
 }
 
 .project-content h2 {
@@ -53,8 +71,10 @@
 
 .project-content p {
     font-size: 1em;
-    color: #72d6d4;
+    color: #ffffff;
     margin-bottom: 10px;
+    flex: 1; /* Permitir que el texto tome el espacio disponible */
+    overflow: auto; /* Permitir desplazamiento interno */
 }
 
 .project-content a {
@@ -64,5 +84,46 @@
 }
 
 .project-content a:hover {
-    color: #66bb6a;
+    color: #00ffee;
+}
+
+/* Personalización del scrollbar */
+.projects-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.projects-container::-webkit-scrollbar-track {
+    background: #155259;
+}
+
+.projects-container::-webkit-scrollbar-thumb {
+    background-color: #44bdbd6e;
+    border-radius: 10px;
+    border: 2px solid #a6e9e4;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+    .projects {
+        margin-left: 0; /* Eliminar margen izquierdo en pantallas más pequeñas */
+    }
+
+    .projects-container {
+        max-height: none; /* Permitir que el contenedor crezca según el contenido */
+    }
+
+    .project-card {
+        width: 100%; /* Hacer que las tarjetas ocupen el 100% del ancho */
+        margin-bottom: 20px; /* Añadir margen inferior entre tarjetas */
+        min-height: auto; /* Asegurar que las tarjetas crezcan según el contenido */
+    }
+
+    .project-content {
+        flex: 1; /* Permitir que el contenido tome el espacio disponible */
+        overflow: visible; /* Permitir desplazamiento interno */
+    }
+
+    .project-content p {
+        overflow: visible; /* Permitir desplazamiento interno */
+    }
 }
