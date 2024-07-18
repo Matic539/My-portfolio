@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react-swc'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/My-portfolio/',
   plugins: [react()],
+  base: 'https://matic539.github.io/My-portfolio',
 })
