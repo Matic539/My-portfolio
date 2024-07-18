@@ -7,7 +7,7 @@
 /package-lock.json
 
 # Directorios de salida
-# dist
+dist
 .built
 build
 .surge
