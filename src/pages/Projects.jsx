@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from '../components/Navbar';
 import BancoCRUD from '../assets/img/Projects/banco-CRUD.webp';
 import ForoRed from '../assets/img/Projects/foro-redlife.webp';
 import Childev from '../assets/img/Projects/childev-website.webp';
@@ -28,6 +29,7 @@ const projects = [
 const Projects = () => {
     return (
         <div className="projects">
+            <Navbar />
             <h1>My Projects</h1>
             <div className="projects-container">
                 {projects.map((project, index) => (

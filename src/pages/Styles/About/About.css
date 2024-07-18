@@ -45,3 +45,10 @@
     object-fit: cover;
     border: 7px solid #00fffb;
 }
+
+@media (max-width: 768px) {
+    .about {
+        margin-left: 0;
+        border-left: none;
+    }
+}

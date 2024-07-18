@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import RingsBackground from '../components/Animated/FogBackground';
+import FogBackground from '../components/Animated/FogBackground';
 import HomeIcon from '../assets/img/Sidebar/HomeIcon.svg';
 import './Styles/SidebarMenu.css';
 
@@ -12,7 +12,7 @@ function SidebarMenu() {
                     <img src={HomeIcon} alt="Home-btn" />
                 </NavLink>
             </div>
-            <RingsBackground />
+            <FogBackground />
             <ul>
                 <li>
                     <NavLink to="/about" activeClassName="active">

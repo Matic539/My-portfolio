@@ -70,3 +70,10 @@
     color: #72d6d4;
     margin-bottom: 10px;
 }
+
+@media (max-width: 768px) {
+    .skills {
+        margin-left: 0;
+        border-left: none;
+    }
+}

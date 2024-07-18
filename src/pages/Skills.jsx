@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from '../components/Navbar';
 import Slider from 'react-slick';
 import CSSimg from '../assets/img/Skills/css.svg';
 import HTML5img from '../assets/img/Skills/html5.svg';
@@ -68,6 +69,7 @@ function Skills() {
 
     return (
         <div className="skills">
+            <Navbar />
             <h1>My Skills</h1>
             <Slider {...settings} className="skills-container">
                 {skills.map((skill, index) => (

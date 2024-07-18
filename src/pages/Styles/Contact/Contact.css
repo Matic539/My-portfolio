@@ -33,3 +33,10 @@
 .social-link:hover {
     color: #ffa726;
 }
+
+@media (max-width: 768px) {
+    .contact {
+        margin-left: 0;
+        border-left: none;
+    }
+}

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
-import YoIMG from '../assets/img/matiasimg.webp'
+import YoIMG from '../assets/img/matiasimg.webp';
+import Navbar from '../components/Navbar';
 import './Styles/About/About.css';
 import 'aos/dist/aos.css';
 
@@ -11,6 +12,7 @@ function About() {
 
     return (
         <section className='about' id='sobreMi'>
+            <Navbar />
             <div className='about-container'>
                 <div className="social" data-aos="flip-up">
                     <img src={YoIMG} alt="Matias-img" className='me-img' />

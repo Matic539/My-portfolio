@@ -54,3 +54,18 @@
 .sidebar-footer {
     color: #fff;
 }
+
+/* Ocultar el menú lateral en dispositivos móviles */
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+    }
+
+    .sidebar.show {
+        transform: translateX(0);
+    }
+
+    .sidebar .close-btn {
+        display: block;
+    }
+}
