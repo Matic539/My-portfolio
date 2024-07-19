@@ -8,7 +8,7 @@ function SidebarMenu() {
     return (
         <nav className="sidebar">
             <div className="sidebar-logo">
-                <NavLink to="/">
+                <NavLink to="/My-portfolio/">
                     <img src={HomeIcon} alt="Home-btn" />
                 </NavLink>
             </div>

@@ -7,7 +7,7 @@ const SidebarMenuWrapper = ({ children }) => {
     const [showSidebar, setShowSidebar] = useState(true);
 
     useEffect(() => {
-        if (location.pathname === '/') {
+        if (location.pathname === '/My-portfolio/') {
             setShowSidebar(false);
         } else {
             setShowSidebar(true);

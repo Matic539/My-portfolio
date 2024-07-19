@@ -13,7 +13,7 @@ function Navbar() {
         <nav className="navbar">
             <ul className={`navbar-links ${isOpen ? "open" : ""}`}>
                 <li>
-                    <NavLink to="/" activeClassName="active">
+                    <NavLink to="/My-portfolio/" activeClassName="active">
                         <p>Home</p>
                     </NavLink>
                 </li>
