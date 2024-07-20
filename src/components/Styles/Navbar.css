@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 250px;
     background-color: #1b4346;
     position: fixed;
     width: 100%;
@@ -10,16 +9,6 @@
     left: 0;
     z-index: 1000;
 }
-
-.navbar-logo h1 {
-    font-size: 1.5em;
-    color: white;
-}
-
-.navbar-logo .chil {
-    color: #b92222;
-}
-
 .navbar-links {
     display: flex;
     list-style: none;
@@ -36,8 +25,8 @@
     transition: color 0.3s ease;
 }
 
-.navbar-links p:hover {
-    color: #b5b5b5;
+.navbar-links p:active {
+    color: #ff0000;
 }
 
 .menu-icon {

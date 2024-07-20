@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import AOS from 'aos';
 import YoIMG from '../assets/img/matiasimg.webp';
 import Navbar from '../components/Navbar';
@@ -10,6 +11,8 @@ function About() {
         AOS.init({ duration: 1000 });
     }, []);
 
+    const { t } = useTranslation();
+
     return (
         <section className='about' id='sobreMi'>
             <Navbar />
@@ -18,16 +21,13 @@ function About() {
                     <img src={YoIMG} alt="Matias-img" className='me-img' />
                 </div>
                 <div className='aboutme'>
-                    <h2>Hello!</h2>
-                    <h1>I am Matias López, a web development and programming enthusiast.</h1>
+                    <h2>{t('about.hello')}</h2>
+                    <h1>{t('about.intro')}</h1>
                     <p data-aos="zoom-in">
-                        I am 20 years old and currently studying Engineering, where I have acquired solid skills in programming,
-                        data structures, algorithms, and system development. I enjoy front-end development and am also learning back-end.
-                        My goal is to become an expert full-stack developer, specializing in scalable and efficient solutions.
-                        I am constantly learning and looking for opportunities that challenge me and allow me to grow professionally.
+                        {t('about.paragraph1')}
                     </p>
                     <p data-aos="zoom-in">
-                        I currently live in Iquique, Chile.
+                        {t('about.paragraph2')}
                     </p>
                 </div>
             </div>

@@ -1,0 +1,12 @@
+{
+    "about": {
+        "hello": "¡Hola!",
+        "intro": "Soy Matias López, un entusiasta del desarrollo web y la programación.",
+        "paragraph1": "Tengo 20 años y actualmente estudio Ingeniería, donde he adquirido habilidades sólidas en programación, estructuras de datos, algoritmos y desarrollo de sistemas. Disfruto del desarrollo front-end y también estoy aprendiendo back-end. Mi objetivo es convertirme en un desarrollador full-stack experto, especializándome en soluciones escalables y eficientes. Estoy en constante aprendizaje y busco oportunidades que me desafíen y me permitan crecer profesionalmente.",
+        "paragraph2": "Actualmente vivo en Iquique, Chile."
+    },
+    "projects": {
+        "title": "Mis Proyectos",
+        "view_project": "Ver Proyecto"
+    }
+}  

@@ -1,0 +1,12 @@
+{
+    "about": {
+        "hello": "Hello!",
+        "intro": "I am Matias López, a web development and programming enthusiast.",
+        "paragraph1": "I am 20 years old and currently studying Engineering, where I have acquired solid skills in programming, data structures, algorithms, and system development. I enjoy front-end development and am also learning back-end. My goal is to become an expert full-stack developer, specializing in scalable and efficient solutions. I am constantly learning and looking for opportunities that challenge me and allow me to grow professionally.",
+        "paragraph2": "I currently live in Iquique, Chile."
+    },
+    "projects": {
+        "title": "My Projects",
+        "view_project": "View Project"
+    }
+}

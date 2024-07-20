@@ -45,3 +45,21 @@
 .language-button button:hover {
     background-color: #72d6d4;
 }
+
+@media (max-width: 567px) {
+    .home-section h1 {
+        font-size: 5.7em;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .language-button {
+        gap: 20px;
+    }
+
+    .language-button button {
+        padding: 10px 50px;
+        font-size: 1.1em;
+        transition: 0.6s ease;
+    }
+}

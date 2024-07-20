@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import Navbar from '../components/Navbar';
 import BancoCRUD from '../assets/img/Projects/banco-CRUD.webp';
 import ForoRed from '../assets/img/Projects/foro-redlife.webp';
@@ -27,10 +28,12 @@ const projects = [
 ];
 
 const Projects = () => {
+    const { t } = useTranslation();
+
     return (
         <div className="projects">
             <Navbar />
-            <h1>My Projects</h1>
+            <h1>{t('projects.title')}</h1>
             <div className="projects-container">
                 {projects.map((project, index) => (
                     <div className="project-card" key={index}>
@@ -38,7 +41,7 @@ const Projects = () => {
                         <div className="project-content">
                             <h2>{project.title}</h2>
                             <p>{project.description}</p>
-                            <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
+                            <a href={project.link} target="_blank" rel="noopener noreferrer">{t('projects.view_project')}</a>
                         </div>
                     </div>
                 ))}
