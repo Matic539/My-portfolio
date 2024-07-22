@@ -21,9 +21,9 @@ const projects = [
     },
     {
         title: 'childev-website',
-        description: 'We offer web and software development services, turning your ideas into high-quality technological solutions. This project is in its final phase and will soon be launched to the public.',
+        description: 'We offer web and software development services, turning your ideas into high-quality technological solutions.',
         image: Childev,
-        link: ''
+        link: 'https://childev-72b71.web.app/'
     },
 ];
 
