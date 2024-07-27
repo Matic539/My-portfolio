@@ -4,14 +4,15 @@ import Navbar from '../components/Navbar';
 import BancoCRUD from '../assets/img/Projects/banco-CRUD.webp';
 import ForoRed from '../assets/img/Projects/foro-redlife.webp';
 import Childev from '../assets/img/Projects/childev-website.webp';
+import PythonProjects from '../assets/img/Projects/py-projects.webp';
 import './Styles/Projects/Projects.css';
 
 const projects = [
     {
-        title: 'Banco-CRUD',
-        description: 'A banking management system developed in Python using MongoDB for storing and managing customer, account, and transaction data.',
-        image: BancoCRUD,
-        link: 'https://github.com/Matic539/Banco-CRUD'
+        title: 'childev-website',
+        description: 'We offer web and software development services, turning your ideas into high-quality technological solutions.',
+        image: Childev,
+        link: 'https://childev.cl/'
     },
     {
         title: 'RedLife-foro',
@@ -20,10 +21,16 @@ const projects = [
         link: 'https://github.com/Matic539/RedLife-foro'
     },
     {
-        title: 'childev-website',
-        description: 'We offer web and software development services, turning your ideas into high-quality technological solutions.',
-        image: Childev,
-        link: 'https://childev-72b71.web.app/'
+        title: 'Banco-CRUD',
+        description: 'A banking management system developed in Python using MongoDB for storing and managing customer, account, and transaction data.',
+        image: BancoCRUD,
+        link: 'https://github.com/Matic539/Banco-CRUD'
+    },
+    {
+        title: 'PY-projects',
+        description: 'Simple Python Projects to Practice and Improve My Skills.',
+        image: PythonProjects,
+        link: 'https://github.com/Matic539/PY-projects'
     },
 ];
 
