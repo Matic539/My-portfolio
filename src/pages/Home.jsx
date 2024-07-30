@@ -19,12 +19,12 @@ const Home = () => {
             <div className="language-button">
                 <Link to="/about">
                     <button onClick={() => changeLanguage('en')}>
-                        <b>English</b>
+                        <b><span className="flag-icon flag-icon-gb"></span>English</b>
                     </button>
                 </Link>
                 <Link to="/about">
                     <button onClick={() => changeLanguage('es')}>
-                        <b>Español</b>
+                        <b><span className="flag-icon flag-icon-es"></span>Español</b>
                     </button>
                 </Link>
             </div>

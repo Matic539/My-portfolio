@@ -32,8 +32,12 @@
     color: #0a2629;
 }
 
+.language-button span {
+    margin-right: 10px;
+}
+
 .language-button button {
-    padding: 10px 50px;
+    padding: 12px 45px;
     font-size: 1.2em;
     background-color: #f2fbfa;
     border: 3px solid #d3f4f2;
