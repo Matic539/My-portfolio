@@ -13,7 +13,7 @@ function Navbar() {
     return (
         <nav className="navbar">
             <ul className={`navbar-links ${isOpen ? "open" : ""}`}>
-                <div className="sidebar-logo">
+                <div className="navbar-logo">
                     <NavLink to="/My-portfolio/">
                         <img src={HomeIcon} alt="Home-btn" />
                     </NavLink>
@@ -40,7 +40,7 @@ function Navbar() {
                         </NavLink>
                     </li>
                 </ul>
-                <footer className='sidebar-footer'>
+                <footer className='navbar-footer'>
                     <p>© 2024. All Rights Reserved.</p>
                 </footer>
             </ul>

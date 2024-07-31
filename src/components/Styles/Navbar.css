@@ -13,12 +13,12 @@
     list-style: none;
 }
 
-.sidebar-logo {
+.navbar-logo {
     text-align: center;
     margin-top: -60px;
 }
 
-.sidebar-logo img {
+.navbar-logo img {
     width: 40%;
     transform: scale(1.2);
 }
@@ -49,7 +49,7 @@
     text-decoration: underline;
 }
 
-.sidebar-footer {
+.navbar-footer {
     color: #fff;
 }
 
