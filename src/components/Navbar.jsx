@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from 'react-router-dom';
+import HomeIcon from '../assets/img/Sidebar/HomeIcon.svg';
 import './Styles/Navbar.css';
 
 function Navbar() {
@@ -12,31 +13,36 @@ function Navbar() {
     return (
         <nav className="navbar">
             <ul className={`navbar-links ${isOpen ? "open" : ""}`}>
-                <li>
-                    <NavLink to="/My-portfolio/" activeClassName="active">
-                        <p>Home</p>
+                <div className="sidebar-logo">
+                    <NavLink to="/My-portfolio/">
+                        <img src={HomeIcon} alt="Home-btn" />
                     </NavLink>
-                </li>
-                <li>
-                    <NavLink to="/about" activeClassName="active">
-                        <p>About</p>
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to="/projects" activeClassName="active">
-                        <p>Projects</p>
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to="/skills" activeClassName="active">
-                        <p>Skills</p>
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to="/contact" activeClassName="active">
-                        <p>Contact</p>
-                    </NavLink>
-                </li>
+                </div>
+                <ul>
+                    <li>
+                        <NavLink to="/about" activeClassName="active">
+                            <p>About</p>
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/projects" activeClassName="active">
+                            <p>Projects</p>
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/skills" activeClassName="active">
+                            <p>Skills</p>
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/contact" activeClassName="active">
+                            <p>Contact</p>
+                        </NavLink>
+                    </li>
+                </ul>
+                <footer className='sidebar-footer'>
+                    <p>© 2024. All Rights Reserved.</p>
+                </footer>
             </ul>
             <div className="menu-icon" onClick={toggleMenu}>
                 <div className="bar"></div>
