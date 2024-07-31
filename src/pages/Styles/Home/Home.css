@@ -58,11 +58,11 @@
     }
 
     .language-button {
-        gap: 20px;
+        gap: 24px;
     }
 
     .language-button button {
-        padding: 10px 50px;
+        padding: 12px 30px;
         font-size: 1.1em;
         transition: 0.6s ease;
     }
