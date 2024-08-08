@@ -5,6 +5,7 @@ import BancoCRUD from '../assets/img/Projects/banco-CRUD.webp';
 import ForoRed from '../assets/img/Projects/foro-redlife.webp';
 import Childev from '../assets/img/Projects/childev-website.webp';
 import PythonProjects from '../assets/img/Projects/py-projects.webp';
+import Pbarber from '../assets/img/Projects/pbarber.webp';
 import './Styles/Projects/Projects.css';
 
 const projects = [
@@ -13,6 +14,12 @@ const projects = [
         description: 'We offer web and software development services, turning your ideas into high-quality technological solutions.',
         image: Childev,
         link: 'https://childev.cl/'
+    },
+    {
+        title: 'Pbarber',
+        description: 'A basic test website for a barbershop, using React.',
+        image: Pbarber,
+        link: 'https://pbarber-website.web.app/'
     },
     {
         title: 'RedLife-foro',
