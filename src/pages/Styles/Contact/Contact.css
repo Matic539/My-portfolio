@@ -1,50 +1,80 @@
+/* --- Estilos para el formulario de contacto --- */
+
 .contact {
-    height: 100vh;
-    padding: 20px;
-    background-color: #0a2629;
-    color: #fff;
-    margin-left: 225px;
-    border-left: 1px solid #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    padding: 20px;
 }
 
 .contact h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.feedback {
+    margin: 0.5rem 0;
+    color: #e63946;
+    /* rojo suave para errores o verde para éxito (puedes cambiar) */
+    font-weight: bold;
     text-align: center;
-    font-size: 3em;
-    color: #d3f4f2;
-    margin-bottom: 20px;
 }
 
-.social-links {
+/* Contenedor del formulario */
+.contact-form {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    /* ancho máximo */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
 }
 
-.social-link {
-    color: #00ffee;
-    font-size: 3em;
-    transition: color 0.3s;
+/* Etiquetas */
+.contact-form label {
+    margin-top: 10px;
+    font-weight: 500;
 }
 
-.social-link:hover {
-    color: #ffa726;
+/* Inputs de texto y correo */
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+    margin-top: 6px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-.contact .me-img {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border: 7px solid #00fffb;
+/* Textarea */
+.contact-form textarea {
+    margin-top: 6px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    /* el usuario puede cambiar altura, no ancho */
 }
 
-@media (max-width: 768px) {
-    .contact {
-        margin-left: 0;
-        border-left: none;
-    }
+/* Botón de envío */
+.contact-form button[type="submit"] {
+    margin-top: 15px;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Efecto hover en botón */
+.contact-form button[type="submit"]:hover {
+    background-color: #005bb5;
 }
